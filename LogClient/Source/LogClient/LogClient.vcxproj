@@ -1,0 +1,274 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="code\drive.h" />
+    <ClInclude Include="code\drive\d_concept.h" />
+    <ClInclude Include="code\drive\d_config.h" />
+    <ClInclude Include="code\drive\d_constant.h" />
+    <ClInclude Include="code\drive\d_error_code.h" />
+    <ClInclude Include="code\drive\d_function.h" />
+    <ClInclude Include="code\drive\d_lib.h" />
+    <ClInclude Include="code\drive\d_macro.h" />
+    <ClInclude Include="code\drive\d_type.h" />
+    <ClInclude Include="code\gui\main_window_widget\main_frame.h" />
+    <ClInclude Include="code\gui\main_window_widget\main_frame_widget\log_frame_widget\log_control_frame.h">
+      <SubType>ZEngine</SubType>
+    </ClInclude>
+    <ClInclude Include="code\gui\main_window_widget\main_frame_widget\socket_control_frame.h" />
+    <ClInclude Include="code\gui\main_window_widget\main_frame_widget\log_frame.h" />
+    <ClInclude Include="code\gui\main_window_widget\main_frame_widget\log_frame_widget\log_text_frame.h" />
+    <ClInclude Include="code\gui\main_window.h" />
+    <ClInclude Include="code\logic\log_client_handler.h" />
+    <ClInclude Include="code\shared\global_data.h" />
+    <ClInclude Include="code\shared\log_data.h" />
+    <ClInclude Include="code\shared\log_data_reader.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="code\gui\main_window_widget\main_frame.cpp" />
+    <ClCompile Include="code\gui\main_window_widget\main_frame_widget\log_frame_widget\log_control_frame.cpp">
+      <SubType>ZEngine</SubType>
+    </ClCompile>
+    <ClCompile Include="code\gui\main_window_widget\main_frame_widget\socket_control_frame.cpp" />
+    <ClCompile Include="code\gui\main_window_widget\main_frame_widget\log_frame.cpp" />
+    <ClCompile Include="code\gui\main_window_widget\main_frame_widget\log_frame_widget\log_text_frame.cpp" />
+    <ClCompile Include="code\gui\main_window.cpp" />
+    <ClCompile Include="code\logic\log_client_handler.cpp" />
+    <ClCompile Include="code\main.cpp" />
+    <ClCompile Include="code\shared\global_data.cpp" />
+    <ClCompile Include="code\shared\log_data.cpp" />
+    <ClCompile Include="code\shared\log_data_reader.cpp" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>17.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{5d8fd6e8-74bb-4076-a301-535c17f79cde}</ProjectGuid>
+    <RootNamespace>LogClient</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)Binaries\output\$(Platform)_$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)Binaries\intermediate\$(ProjectName)\$(Platform)\$(Configuration)\</IntDir>
+    <TargetName>$(ProjectName)_$(Platform)_$(Configuration)</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)Binaries\output\$(Platform)_$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)Binaries\intermediate\$(ProjectName)\$(Platform)\$(Configuration)\</IntDir>
+    <TargetName>$(ProjectName)_$(Platform)_$(Configuration)</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>$(SolutionDir)Binaries\output\$(Platform)_$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)Binaries\intermediate\$(ProjectName)\$(Platform)\$(Configuration)\</IntDir>
+    <TargetName>$(ProjectName)_$(Platform)_$(Configuration)</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>$(SolutionDir)Binaries\output\$(Platform)_$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)Binaries\intermediate\$(ProjectName)\$(Platform)\$(Configuration)\</IntDir>
+    <TargetName>$(ProjectName)_$(Platform)_$(Configuration)</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)Library\ZEngine\include;$(SolutionDir)Library\ZEngine\include_library;$(SolutionDir)Source\LogClient\code;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(SolutionDir)Library\ZEngine\$(Platform)_$(Configuration)\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+    <PreBuildEvent>
+      <Command>if not exist "$(SolutionDir)Binaries\debugger" mkdir "$(SolutionDir)Binaries\debugger"</Command>
+    </PreBuildEvent>
+    <PostBuildEvent>
+      <Command>if not exist "$(SolutionDir)Binaries\output\$(Platform)_$(Configuration)" mkdir "$(SolutionDir)Binaries\output\$(Platform)_$(Configuration)"
+if not exist "$(SolutionDir)Binaries\output_library\$(Platform)_$(Configuration)" mkdir "$(SolutionDir)Binaries\output_library\$(Platform)_$(Configuration)"
+if not exist "$(SolutionDir)Release\$(Platform)_$(Configuration)" mkdir "$(SolutionDir)Release\$(Platform)_$(Configuration)"
+xcopy /S /Y "$(SolutionDir)Library\ZEngine\$(Platform)_$(Configuration)\bin\*.dll*" "$(SolutionDir)Binaries\output\$(Platform)_$(Configuration)"
+xcopy /S /Y "$(SolutionDir)Library\ZEngine\$(Platform)_$(Configuration)\bin\*.pdb*" "$(SolutionDir)Binaries\output\$(Platform)_$(Configuration)"
+xcopy /S /Y "$(SolutionDir)Binaries\output\$(Platform)_$(Configuration)\*.dll*" "$(SolutionDir)Release\$(Platform)_$(Configuration)" 
+xcopy /S /Y "$(SolutionDir)Binaries\output_library\$(Platform)_$(Configuration)\*.dll*" "$(SolutionDir)Release\$(Platform)_$(Configuration)" 
+xcopy /S /Y "$(SolutionDir)Binaries\output\$(Platform)_$(Configuration)\*.exe*" "$(SolutionDir)Release\$(Platform)_$(Configuration)" 
+xcopy /S /Y "$(SolutionDir)Binaries\output_library\$(Platform)_$(Configuration)\*.exe*" "$(SolutionDir)Release\$(Platform)_$(Configuration)" 
+
+if not exist "$(SolutionDir)Release\$(Platform)_$(Configuration)\Content" mkdir "$(SolutionDir)Release\$(Platform)_$(Configuration)\Content"
+if not exist "$(SolutionDir)Binaries\debugger\Content" mkdir "$(SolutionDir)Binaries\debugger\Content"
+xcopy /S /Y "$(SolutionDir)Content\*.*" "$(SolutionDir)Release\$(Platform)_$(Configuration)\Content" 
+xcopy /S /Y "$(SolutionDir)Content\*.*" "$(SolutionDir)Binaries\debugger\Content"</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)Library\ZEngine\include;$(SolutionDir)Library\ZEngine\include_library;$(SolutionDir)Source\LogClient\code;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(SolutionDir)Library\ZEngine\$(Platform)_$(Configuration)\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+    <PreBuildEvent>
+      <Command>if not exist "$(SolutionDir)Binaries\debugger" mkdir "$(SolutionDir)Binaries\debugger"</Command>
+    </PreBuildEvent>
+    <PostBuildEvent>
+      <Command>if not exist "$(SolutionDir)Binaries\output\$(Platform)_$(Configuration)" mkdir "$(SolutionDir)Binaries\output\$(Platform)_$(Configuration)"
+if not exist "$(SolutionDir)Binaries\output_library\$(Platform)_$(Configuration)" mkdir "$(SolutionDir)Binaries\output_library\$(Platform)_$(Configuration)"
+if not exist "$(SolutionDir)Release\$(Platform)_$(Configuration)" mkdir "$(SolutionDir)Release\$(Platform)_$(Configuration)"
+xcopy /S /Y "$(SolutionDir)Library\ZEngine\$(Platform)_$(Configuration)\bin\*.dll*" "$(SolutionDir)Binaries\output\$(Platform)_$(Configuration)"
+xcopy /S /Y "$(SolutionDir)Library\ZEngine\$(Platform)_$(Configuration)\bin\*.pdb*" "$(SolutionDir)Binaries\output\$(Platform)_$(Configuration)"
+xcopy /S /Y "$(SolutionDir)Binaries\output\$(Platform)_$(Configuration)\*.dll*" "$(SolutionDir)Release\$(Platform)_$(Configuration)" 
+xcopy /S /Y "$(SolutionDir)Binaries\output_library\$(Platform)_$(Configuration)\*.dll*" "$(SolutionDir)Release\$(Platform)_$(Configuration)" 
+xcopy /S /Y "$(SolutionDir)Binaries\output\$(Platform)_$(Configuration)\*.exe*" "$(SolutionDir)Release\$(Platform)_$(Configuration)" 
+xcopy /S /Y "$(SolutionDir)Binaries\output_library\$(Platform)_$(Configuration)\*.exe*" "$(SolutionDir)Release\$(Platform)_$(Configuration)" 
+
+if not exist "$(SolutionDir)Release\$(Platform)_$(Configuration)\Content" mkdir "$(SolutionDir)Release\$(Platform)_$(Configuration)\Content"
+if not exist "$(SolutionDir)Binaries\debugger\Content" mkdir "$(SolutionDir)Binaries\debugger\Content"
+xcopy /S /Y "$(SolutionDir)Content\*.*" "$(SolutionDir)Release\$(Platform)_$(Configuration)\Content" 
+xcopy /S /Y "$(SolutionDir)Content\*.*" "$(SolutionDir)Binaries\debugger\Content"</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)Library\ZEngine\include;$(SolutionDir)Library\ZEngine\include_library;$(SolutionDir)Source\LogClient\code;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(SolutionDir)Library\ZEngine\$(Platform)_$(Configuration)\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+    <PreBuildEvent>
+      <Command>if not exist "$(SolutionDir)Binaries\debugger" mkdir "$(SolutionDir)Binaries\debugger"</Command>
+    </PreBuildEvent>
+    <PostBuildEvent>
+      <Command>if not exist "$(SolutionDir)Binaries\output\$(Platform)_$(Configuration)" mkdir "$(SolutionDir)Binaries\output\$(Platform)_$(Configuration)"
+if not exist "$(SolutionDir)Binaries\output_library\$(Platform)_$(Configuration)" mkdir "$(SolutionDir)Binaries\output_library\$(Platform)_$(Configuration)"
+if not exist "$(SolutionDir)Release\$(Platform)_$(Configuration)" mkdir "$(SolutionDir)Release\$(Platform)_$(Configuration)"
+xcopy /S /Y "$(SolutionDir)Library\ZEngine\$(Platform)_$(Configuration)\bin\*.dll*" "$(SolutionDir)Binaries\output\$(Platform)_$(Configuration)"
+xcopy /S /Y "$(SolutionDir)Library\ZEngine\$(Platform)_$(Configuration)\bin\*.pdb*" "$(SolutionDir)Binaries\output\$(Platform)_$(Configuration)"
+xcopy /S /Y "$(SolutionDir)Binaries\output\$(Platform)_$(Configuration)\*.dll*" "$(SolutionDir)Release\$(Platform)_$(Configuration)" 
+xcopy /S /Y "$(SolutionDir)Binaries\output_library\$(Platform)_$(Configuration)\*.dll*" "$(SolutionDir)Release\$(Platform)_$(Configuration)" 
+xcopy /S /Y "$(SolutionDir)Binaries\output\$(Platform)_$(Configuration)\*.exe*" "$(SolutionDir)Release\$(Platform)_$(Configuration)" 
+xcopy /S /Y "$(SolutionDir)Binaries\output_library\$(Platform)_$(Configuration)\*.exe*" "$(SolutionDir)Release\$(Platform)_$(Configuration)" 
+
+if not exist "$(SolutionDir)Release\$(Platform)_$(Configuration)\Content" mkdir "$(SolutionDir)Release\$(Platform)_$(Configuration)\Content"
+if not exist "$(SolutionDir)Binaries\debugger\Content" mkdir "$(SolutionDir)Binaries\debugger\Content"
+xcopy /S /Y "$(SolutionDir)Content\*.*" "$(SolutionDir)Release\$(Platform)_$(Configuration)\Content" 
+xcopy /S /Y "$(SolutionDir)Content\*.*" "$(SolutionDir)Binaries\debugger\Content"</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)Library\ZEngine\include;$(SolutionDir)Library\ZEngine\include_library;$(SolutionDir)Source\LogClient\code;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(SolutionDir)Library\ZEngine\$(Platform)_$(Configuration)\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+    <PreBuildEvent>
+      <Command>if not exist "$(SolutionDir)Binaries\debugger" mkdir "$(SolutionDir)Binaries\debugger"</Command>
+    </PreBuildEvent>
+    <PostBuildEvent>
+      <Command>if not exist "$(SolutionDir)Binaries\output\$(Platform)_$(Configuration)" mkdir "$(SolutionDir)Binaries\output\$(Platform)_$(Configuration)"
+if not exist "$(SolutionDir)Binaries\output_library\$(Platform)_$(Configuration)" mkdir "$(SolutionDir)Binaries\output_library\$(Platform)_$(Configuration)"
+if not exist "$(SolutionDir)Release\$(Platform)_$(Configuration)" mkdir "$(SolutionDir)Release\$(Platform)_$(Configuration)"
+xcopy /S /Y "$(SolutionDir)Library\ZEngine\$(Platform)_$(Configuration)\bin\*.dll*" "$(SolutionDir)Binaries\output\$(Platform)_$(Configuration)"
+xcopy /S /Y "$(SolutionDir)Library\ZEngine\$(Platform)_$(Configuration)\bin\*.pdb*" "$(SolutionDir)Binaries\output\$(Platform)_$(Configuration)"
+xcopy /S /Y "$(SolutionDir)Binaries\output\$(Platform)_$(Configuration)\*.dll*" "$(SolutionDir)Release\$(Platform)_$(Configuration)" 
+xcopy /S /Y "$(SolutionDir)Binaries\output_library\$(Platform)_$(Configuration)\*.dll*" "$(SolutionDir)Release\$(Platform)_$(Configuration)" 
+xcopy /S /Y "$(SolutionDir)Binaries\output\$(Platform)_$(Configuration)\*.exe*" "$(SolutionDir)Release\$(Platform)_$(Configuration)" 
+xcopy /S /Y "$(SolutionDir)Binaries\output_library\$(Platform)_$(Configuration)\*.exe*" "$(SolutionDir)Release\$(Platform)_$(Configuration)" 
+
+if not exist "$(SolutionDir)Release\$(Platform)_$(Configuration)\Content" mkdir "$(SolutionDir)Release\$(Platform)_$(Configuration)\Content"
+if not exist "$(SolutionDir)Binaries\debugger\Content" mkdir "$(SolutionDir)Binaries\debugger\Content"
+xcopy /S /Y "$(SolutionDir)Content\*.*" "$(SolutionDir)Release\$(Platform)_$(Configuration)\Content" 
+xcopy /S /Y "$(SolutionDir)Content\*.*" "$(SolutionDir)Binaries\debugger\Content"</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
